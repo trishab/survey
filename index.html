@@ -1,1 +1,147 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="mturk.js" type="text/javascript"></script>
+    <style>
+    	body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+	}
+    .form {
+  max-width: 530px;
+  padding: 15px;
+  margin: 0 auto;
+}
+</style>
+  </head>
+
+  <body>
+
+
+  <div class="container">
+
+
+    <form class = "form" id="mturk_form">
+<label>1. What is your gender? </label>
+
+<div class="radio"><label><input name="Gender" type="radio" value="Male" />Male </label></div>
+
+<div class="radio"><label><input name="Gender" type="radio" value="Female" />Female </label></div>
+</fieldset>
+
+<fieldset>
+<div class="input-group"><label>2. What is your age?</label> <input class="form-control" name="Age" size="2" type="number" /></div>
+</fieldset>
+
+<fieldset><label>4. What is the total income of your household? </label> <select class="form-control" name="HouseHoldIncome" size="5"><option>Less than $12,500</option><option>$12,500 - $24,999</option><option>$25,000 - $37,499</option><option>$37,500 - $49,999</option><option>$50,000 - $62,499</option><option>$62,500 - $74,999</option><option>$75,000 - $87,499</option><option>$87,500 - $99,999</option><option>$100,000 or more</option> </select></fieldset>
+
+
+
+<input name="PersonID" type="hidden" value="${person_id}" />
+<div class="form-group">
+  <label>What is your biggest financial concern?</label>
+  <input class="form-control" name="Concern" size="30" type="text" />
+</div>
+
+
+<input name="PersonID" type="hidden" value="${person_id}" />
+<div class="form-group">
+  <label>How would you describe your relationship with money?</label>
+  <input class="form-control" name="RelationshipWithMoney" size="30" type="text" />
+</div>
+<input name="PersonID" type="hidden" value="${person_id}" />
+<div class="form-group">
+  <label>What is the biggest challenge in managing and planning your finances??</label>
+  <input class="form-control" name="FinancialChallenges" size="30" type="text" />
+</div>
+<input name="PersonID" type="hidden" value="${person_id}" />
+<div class="form-group">
+  <label>What is your relationship with your bank?</label>
+  <input class="form-control" name="RelationshipWithBank" size="30" type="text" />
+</div>
+<input name="PersonID" type="hidden" value="${person_id}" />
+<div class="form-group">
+  <label>What does "success" mean to you?</label>
+  <input class="form-control" name="Success" size="30" type="text" />
+</div>
+
+<fieldset><label>Do you use non-banking service providers for paychecks, savings, loans, investing or payments? </label>
+
+<div class="radio"><label><input name="NonBanking" type="radio" value="Yes" />Yes </label></div>
+
+<div class="radio"><label><input name="NonBanking" type="radio" value="No" />No </label></div>
+</fieldset>
+
+
+<fieldset><label>What services do you use non-banking providers for? (Choose all that apply:) </label>
+
+<div class="checkbox"><label><input name="Providers" type="checkbox" value="Paycheck" />Paycheck </label></div>
+
+<div class="checkbox"><label><input name="Providers" type="checkbox" value="Savings" />Savings </label></div>
+
+<div class="checkbox"><label><input name="Providers" type="checkbox" value="Loans" />Loans </label></div>
+
+<div class="checkbox"><label><input name="Providers" type="checkbox" value="Investing" />Investing </label></div>
+
+<div class="checkbox"><label><input name="Providers" type="checkbox" value="Payments " />Payments </label></div>
+
+<div class="checkbox"><label><input name="Providers" type="checkbox" value="Others" />Others (please specify) </label></div>
+</fieldset>
+
+<input name="PersonID" type="hidden" value="${person_id}" />
+<div class="form-group">
+  <label>Who do you use for your non-banking services (e.g. Motif for investing, or Earnest for loan servicing)?  Please list all</label>
+  <input class="form-control" name="ServiceProviders" size="30" type="text" />
+</div>
+
+
+<input name="PersonID" type="hidden" value="${person_id}" />
+<div class="form-group">
+  <label>What do you like about their services?</label>
+  <input class="form-control" name="Likes" size="30" type="text" />
+</div>
+
+
+
+<input name="PersonID" type="hidden" value="${person_id}" />
+<div class="form-group">
+  <label>What do you dislike about your non-banking service provider?</label>
+  <input class="form-control" name="Dislikes" size="30" type="text" />
+</div>
+
+<input name="PersonID" type="hidden" value="${person_id}" />
+<div class="form-group">
+  <label>Why do you use non-banking service providers?</label>
+  <input class="form-control" name="WhyNonBanking" size="30" type="text" />
+</div>
+
+
+<input id= "submit_form" type="submit"/>
+</div>
+
+</form>
+
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
